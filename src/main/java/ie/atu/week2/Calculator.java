@@ -27,6 +27,18 @@ public class Calculator {
 
             case "multiply" -> firstNum * secondNum;
 
+            case "divide" -> {
+                if(secondNum == 0){
+                    System.out.println("Error: Cannot divide by zero");
+                    validOperation = false;
+                    yield 0;
+                }
+                else
+                {
+                    yield firstNum / secondNum;
+                }
+            }
+
             default -> {
                 System.out.println("Invalid Operation");
                 validOperation = false;
