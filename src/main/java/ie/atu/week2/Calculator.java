@@ -23,6 +23,8 @@ public class Calculator {
             //Add Num1 + Num2
             case "add" -> firstNum + secondNum;
 
+            case "subtract" -> firstNum - secondNum;
+
             default -> {
                 System.out.println("Invalid Operation");
                 validOperation = false;
