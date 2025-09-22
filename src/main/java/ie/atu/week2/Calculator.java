@@ -25,6 +25,8 @@ public class Calculator {
 
             case "subtract" -> firstNum - secondNum;
 
+            case "multiply" -> firstNum * secondNum;
+
             default -> {
                 System.out.println("Invalid Operation");
                 validOperation = false;
